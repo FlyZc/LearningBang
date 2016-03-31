@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhouchi.learningbang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+ 	<!--  在SDCard中创建与删除文件权限  -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_pic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+         android:name="com.avos.avoscloud.feedback.ThreadActivity" >
+       </activity>
+        
+
+        <activity
+            android:name="com.zhouchi.learningbang.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录 -->
+        <activity
+            android:name="com.zhouchi.learningbang.LoginActivity"
+            android:label="@string/app_name"
+            >            
+        </activity>
+        
+        <!--找回密码  -->
+        <activity
+            android:name="com.zhouchi.learningbang.FindPwdActivity"
+            android:label="@string/app_name"
+             > 
+        </activity>
+        
+        <!-- 注册 -->
+        <activity
+            android:name="com.zhouchi.learningbang.RegisteActivity"
+           android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 用户反馈 -->
+        <activity
+            android:name="com.zhouchi.learningbang.SuggestionsActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 个人中心 -->
+        <activity
+            android:name="com.zhouchi.learningbang.PersonalInfoActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 修改用户名 -->
+        <activity
+            android:name="com.zhouchi.learningbang.ChangeNameActivity"
+           	android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.zhouchi.learningbang.ChangePwdActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        <!-- 修改头像 -->
+        <activity
+            android:name="com.zhouchi.learningbang.CropPictureActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <!-- 我来解答 -->
+         <activity
+            android:name="com.zhouchi.learningbang.AnswerQuestionsActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        <!-- 我要求助 -->
+        <activity
+            android:name="com.zhouchi.learningbang.AskForHelpActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <!-- 我的问题 -->
+        <activity
+            android:name="com.zhouchi.learningbang.MyQuestionsActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <!-- 求助详情 -->
+        <activity
+            android:name="com.zhouchi.learningbang.MyQuestionsDetailedActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <!-- 查看每个答案 -->
+        <activity
+            android:name="com.zhouchi.learningbang.SingleAnswerActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+		<!-- 我来解答详细 -->
+		<activity
+            android:name="com.zhouchi.learningbang.AnswerQuestionsDetailActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        <!-- 经验交流 -->
+        <activity
+            android:name="com.zhouchi.learningbang.ExperienceExchangeActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <!-- 逛逛 -->
+        <activity
+            android:name="com.zhouchi.learningbang.SocialActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        <!-- 查看每个分享 -->
+        <activity
+            android:name="com.zhouchi.learningbang.ReadExperienceActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 查看图片 -->
+        <activity
+            android:name="com.zhouchi.learningbang.ImgDisplayActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 设置 -->
+        <activity
+            android:name="com.zhouchi.learningbang.Settings"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+         <activity
+            android:name="com.zhouchi.learningbang.AboutUsActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <activity
+            android:name="com.zhouchi.learningbang.FunctionActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <!-- 我的好友 -->
+        <activity
+            android:name="com.zhouchi.learningbang.FriendsActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+        
+        <activity
+            android:name="com.zhouchi.learningbang.MessageActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+            
+         <activity
+            android:name="com.zhouchi.learningbang.ReplyActivity"
+            android:label="@string/app_name"
+             >
+        </activity>
+    </application>
+
+</manifest>

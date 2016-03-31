@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro">
+    
+    <TextView 
+        android:id="@+id/getMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        />
+    <TextView 
+        android:id="@+id/getmessageAuthorInfo"
+        android:layout_below="@id/getMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deepskyblue"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        />
+    
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/contact_submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/reply"
+        android:background="@color/deepskyblue"/>
+    <EditText 
+        android:id="@+id/contact_content"
+        android:layout_below="@id/getmessageAuthorInfo"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:layout_above="@id/contact_submit"
+        android:hint="@string/reply_text"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

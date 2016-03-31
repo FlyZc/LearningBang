@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:paddingTop="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText 
+        	android:id="@+id/askForHelpTitle"
+        	android:gravity="top"       
+        	android:layout_width="match_parent"
+        	android:background="@null"
+        	android:layout_height="300dp"
+        	android:hint="@string/descriptionHint"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:contentDescription="@string/pic_desc"
+        	android:layout_height="150dp"
+        	android:id="@+id/askForHelpPicture"
+        	android:layout_width="wrap_content"
+        />
+    
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+        
+        <ImageView
+            android:id="@+id/askForHelpAddPicture"
+            android:background="@drawable/camera"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+        
+        <EditText
+            android:background="@null"
+           
+            android:id="@+id/askForHelpScore"
+            android:layout_width="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/askForHelpAddPicture"
+            android:layout_alignBottom="@id/askForHelpAddPicture"
+            android:hint="@string/xuanshangjifen"/>
+        
+        <Button
+        	android:id="@+id/askForHelpSubmit"
+        	android:background="#3366CC"
+        	android:layout_toRightOf="@id/askForHelpScore"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignBottom="@id/askForHelpScore"
+        	android:layout_alignParentRight="true"
+        	android:text="@string/help"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

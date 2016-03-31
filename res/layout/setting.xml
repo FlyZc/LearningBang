@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:text="@string/settings"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="#3366CC"
+        android:gravity="center"/>
+    
+    <RelativeLayout 
+        android:id="@+id/setting_function_introduction"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        
+        <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:text="@string/function_introduction"
+        	android:paddingLeft="5dp"
+        	android:gravity="center_vertical"
+        	android:textSize="20sp"/>
+            
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+			android:layout_gravity="center"           
+            android:layout_alignParentRight="true"/>
+       
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        android:id="@+id/setting_about_us"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        
+        <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:text="@string/about_us"
+        	android:paddingLeft="5dp"
+        	android:gravity="center_vertical"
+        	android:textSize="20sp"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+           	android:layout_height="match_parent"
+           	android:paddingRight="5dp"
+        	android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"/>
+       
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        android:id="@+id/setting_share"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:paddingLeft="5dp"
+        	android:gravity="center_vertical"
+        	android:text="@string/i_wanna_share"
+        	android:textSize="20sp"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+        	android:gravity="center_vertical"
+            android:textSize="20sp"/>
+       
+     </RelativeLayout>
+     
+    
+
+</LinearLayout>

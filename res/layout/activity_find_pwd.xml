@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:text="@string/password_find"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="#3366CC"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+
+        <EditText
+            android:id="@+id/find_pwd_email"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/password"
+            android:hint="@string/input_email" />
+        
+
+        <Button
+            android:id="@+id/find_pwd_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_button_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_button_selector"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_h3" />
+    </LinearLayout>
+
+</LinearLayout>

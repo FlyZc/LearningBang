@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:text="@string/changePwd"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="#3366CC"
+        android:gravity="center"/>
+    
+    <EditText 
+        android:layout_marginTop="20dp"
+        android:id="@+id/etChangePwdOld"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="@string/oldPwdHint"
+        android:background="@color/white"/>
+    <EditText 
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etChangePwdNew"
+        android:paddingLeft="10dp"
+        android:hint="@string/newPwdHint"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"/>
+    
+     <Button
+         android:id="@+id/btnChangePwd"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="25dp"
+         android:layout_marginRight="25dp"
+         android:gravity="center"
+         android:text="@string/ok"
+         android:background="#3366CC"
+         android:layout_width="match_parent"
+         android:textColor="@color/white"
+         android:layout_height="50dp"/>
+
+</LinearLayout>

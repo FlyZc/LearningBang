@@ -1,0 +1,353 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.zhouchi.learningcircle.MainActivity" >
+    
+    <RelativeLayout        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366CC">
+    	<ImageView 
+    	    android:layout_marginTop="20dp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/ivPersonalHead"
+        	android:background="@drawable/personalhead"
+        	android:layout_alignParentTop="true"
+        	android:layout_centerHorizontal="true"/>"
+    	
+    	<LinearLayout 
+    	    android:id="@+id/flag1"
+    	    android:layout_below="@id/ivPersonalHead"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal">
+    	    <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/deepskyblue"
+        		android:text="@string/main_name_text"
+    	    	android:layout_gravity="left"/>
+    	    <TextView 
+    	        android:layout_marginLeft="5dp"
+    	        android:textColor="@color/deepskyblue"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/mainPersonalName"
+    	    	android:layout_gravity="right"/>
+    	</LinearLayout>
+    	
+        <LinearLayout 
+            android:layout_below="@id/flag1"
+            android:id="@+id/flag2"
+			android:layout_centerHorizontal="true"            
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal">
+    	    
+    	    <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/red"
+        		android:text="@string/score_text"
+    	    	android:layout_gravity="left"/>
+    	    <TextView 
+    	        android:layout_marginLeft="5dp"
+    	        android:textColor="@color/red"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/mainPersonalScore"
+        		android:layout_gravity="right"/>
+    	</LinearLayout>
+    	<TextView
+        	android:id="@android:id/empty"
+        	android:layout_below="@id/ivPersonalHead"
+        	android:layout_marginTop="5dp"
+        	android:layout_centerHorizontal="true"
+        	android:gravity="center"
+        	android:textColor="@color/red"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/personal_info_empty" />
+    	
+        <ImageView
+            android:id="@+id/refreshInfo"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/refresh"/>    	
+    	
+    </RelativeLayout>
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tlMain">
+        
+        <TableRow> 
+            <LinearLayout
+                android:id="@+id/mainAnswer"
+               	android:layout_marginTop="20dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="0"
+            	android:layout_column="0"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            	<ImageView
+            	    android:layout_marginTop="15dp"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/answer"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:layout_gravity="center"
+                	android:gravity="center"
+                	android:text="@string/answer"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="0"
+            	android:layout_column="1"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            
+            	<ImageView
+            	    android:id="@+id/ivMainHelp"
+            	    android:layout_marginTop="15dp"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/help"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:text="@string/help"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/mainMyQuestions"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="2"
+            	android:layout_column="2"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            
+            	<ImageView 
+            	    android:layout_marginTop="15dp"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/my_questions"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:text="@string/myquestions"/>
+            </LinearLayout>
+            
+            
+         </TableRow>
+        
+         <TableRow> 
+            <LinearLayout
+                android:id="@+id/mainSign"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="1"
+            	android:layout_column="0"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            	
+            	<ImageView
+            	    android:layout_marginTop="15dp"          	    
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/sign"/>
+                
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:layout_gravity="center"
+                	android:gravity="center"
+                	android:text="@string/sign"/>
+            </LinearLayout> 
+            
+            <LinearLayout
+                android:id="@+id/mainSocial"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="1"
+            	android:layout_column="1"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            
+            	<ImageView 
+            	    android:layout_marginTop="15dp"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/social"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:text="@string/social"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/mainShare"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="1"
+            	android:layout_column="2"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            
+            	<ImageView 
+            	    android:layout_marginTop="15dp"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/share"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:text="@string/share"/>
+            </LinearLayout>
+         </TableRow>
+         
+         <TableRow> 
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="2"
+            	android:layout_column="0"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            	
+            	<ImageView
+            	    android:layout_marginTop="15dp"
+            	    android:id="@+id/userFeedback"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/feedback"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:layout_gravity="center"
+                	android:gravity="center"
+                	android:text="@string/feedback"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/mainSetting"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gainsboro"
+            	android:layout_weight="1"
+            	android:layout_row="2"
+            	android:layout_column="1"
+            	android:orientation="vertical"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent">
+            
+            	<ImageView 
+            	    android:layout_marginTop="15dp"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:background="@drawable/settings"/>
+            	<TextView
+            	    android:layout_marginTop="15dp"
+                	android:layout_height="wrap_content"
+                	android:layout_width="wrap_content"
+                	android:gravity="center"
+                	android:layout_gravity="center"
+                	android:text="@string/settings"/>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/mainFriends"
+                android:layout_marginTop="10dp" 
+                android:layout_marginLeft="10dp" 
+                android:background="@color/gainsboro" 
+                android:layout_weight="1" 
+                android:layout_row="2" 
+                android:layout_column="2" 
+                android:orientation="vertical" 
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent">
+  			<ImageView 
+  			    android:layout_marginTop="15dp" 
+      			android:layout_width="wrap_content" 
+      			android:layout_height="wrap_content" 
+      			android:gravity="center" 
+      			android:layout_gravity="center" 
+      			android:background="@drawable/friends" /> 
+  			<TextView 
+  			    android:layout_marginTop="15dp" 
+  			    android:layout_height="wrap_content" 
+  			    android:layout_width="wrap_content" 
+  			    android:gravity="center" 
+  			    android:layout_gravity="center" 
+  			    android:text="@string/frends" /> 
+  			</LinearLayout> 
+  			
+
+         </TableRow>
+   </TableLayout>
+
+</LinearLayout>

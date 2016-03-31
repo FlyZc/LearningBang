@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/au_title"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:text="@string/about_us"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="#3366CC"
+        android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/au_name"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/au_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <ImageView 
+        android:id="@+id/au_pic"
+        android:layout_below="@id/au_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/app_pic"
+        />
+    <TextView
+        android:id="@+id/au_edition"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/au_pic"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/edition"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/au_phone"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/au_edition"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/contact_phone"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/au_email"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/au_phone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/contact_email"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"/>
+
+</RelativeLayout>

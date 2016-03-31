@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    	<EditText 
+        	android:id="@+id/experienceExchangeTitle"
+        	android:layout_width="match_parent"
+        	android:background="@null"
+        	android:gravity="center_vertical" 
+        	android:layout_height="40dp"
+        	android:hint="@string/titleHint"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText 
+        	android:id="@+id/experienceExchangeContent"
+        	android:layout_width="match_parent"
+        	android:gravity="top" 
+        	android:background="@null"
+        	android:layout_height="400dp"
+        	android:hint="@string/content_share_hint"/>
+    </LinearLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+        <ImageView
+            android:id="@+id/experienceExchangeAddPicture"
+            android:background="@drawable/camera"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_width="45dp"
+        	android:layout_height="45dp"/>
+        
+        <Button
+        	android:id="@+id/experienceExchangeSubmit"
+        	android:background="#3366CC"
+        	android:layout_toRightOf="@id/experienceExchangeAddPicture"
+        	android:layout_marginLeft="10dp"
+        	android:layout_width="150dp"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:text="@string/share_submit"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

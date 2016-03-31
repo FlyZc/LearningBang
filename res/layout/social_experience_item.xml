@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+     >
+    
+    <RelativeLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/white">
+        <TextView
+        	android:padding="5dp"
+       		android:layout_marginTop="10dp"
+        	android:gravity="left"
+        	android:id="@+id/experienceItemTitle"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	/>
+        <TextView 
+        	android:padding="5dp"
+       		android:layout_marginTop="10dp"
+       		android:textColor="@color/deepskyblue"
+        	android:layout_below="@id/experienceItemTitle"
+        	android:gravity="right"
+        	android:id="@+id/experienceItemUser"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	/>
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

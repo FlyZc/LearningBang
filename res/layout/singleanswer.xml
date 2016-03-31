@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+    
+    <TextView
+    	android:layout_alignParentTop="true"     
+        android:id="@+id/singleanswer_add"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:text="@string/answer_details"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/add"
+        android:background="#3366CC"
+        android:gravity="center"/>
+    <TextView 
+        android:layout_below="@id/singleanswer_add"
+        android:background="@color/white"
+        android:id="@+id/singleanswer_describe"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/singleanswer_describe"
+        android:id="@+id/singleanswer_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        />
+    
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_bg"
+        android:id="@+id/singleanswer_accept"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/accept"/>
+        
+    <Button
+        android:layout_width="150dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/singleanswer_return_back"
+       	android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/return_back"/>
+        
+    
+</RelativeLayout>

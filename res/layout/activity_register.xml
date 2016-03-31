@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/view_bar_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/registe_userName"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/name_tag"
+            android:hint="@string/name_text" />
+
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:hint="@string/sex_text"
+                android:textColor="@color/base_text_color"
+                android:textSize="@dimen/txt_h3" />
+
+            <RadioGroup
+                android:id="@+id/registe_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/registe_radioboy"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:button="@drawable/radiobutton_selector"
+                    android:text="@string/boy_text"
+                    android:textColor="@color/base_text_color" />
+
+                <RadioButton
+                    android:id="@+id/registe_radiogirl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobutton_selector"
+                    android:text="@string/girl_text"
+                    android:textColor="@color/base_text_color" />
+            </RadioGroup>
+        </RelativeLayout>
+        
+        <EditText
+            android:id="@+id/registe_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/suo"
+            android:hint="@string/pwd_text" />
+        
+
+        <EditText
+            android:id="@+id/registe_rePassword"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/suo"
+            android:hint="@string/repwd_text" />
+
+        <EditText
+            android:id="@+id/registe_phoneNum"
+            android:inputType="textPhonetic"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/phone"
+            android:hint="@string/phoneNumber" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:id="@+id/registeEmail"
+            android:drawableRight="@drawable/password"
+            android:hint="@string/email_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/registeSubmit"
+               	android:layout_width="2000dp"
+               	android:layout_height="50dp"
+               	android:background="@drawable/base_button_selector"
+               	android:textColor="@color/white"
+               	android:gravity="center" 
+               
+                android:layout_centerHorizontal="true"
+                android:text="@string/register" />
+
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

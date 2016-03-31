@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+    
+        
+    <TextView 
+        android:text="@string/suggestionFeedback"
+        android:gravity="center"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:background="#3366CC"
+        android:layout_width="match_parent"
+        
+    />
+    
+    <EditText
+        android:id="@+id/tvSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:hint="@string/suggestionsForUser"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="@string/contactInfo"/>
+    
+    <EditText
+        android:id="@+id/tvUserContact"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+       
+        android:hint="@string/userContactHint"/>
+    
+    <Button 
+        android:id="@+id/suggestionsSubmit"
+        android:text="@string/feedbackSubmit"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
